@@ -12,4 +12,4 @@ const nextConfig = {
     (process.env.NODE_ENV === "production" ? "/haiqv-landing-next" : ""),
 };
 
-module.exports = nextConfig;
+export default nextConfig;
