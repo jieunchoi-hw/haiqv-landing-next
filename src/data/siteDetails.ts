@@ -1,6 +1,6 @@
 export const siteDetails = {
   siteName: "HAiQV",
-  siteUrl: "",
+  siteUrl: "https://jieunchoi-hw.github.io/haiqv-landing-next",
   metadata: {
     title: "기업형 AI 플랫폼 | HAiQV",
     description: "HAiQV AI Platform Landing Page",

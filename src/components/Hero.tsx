@@ -3,8 +3,6 @@ import React from "react";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
-import AppStoreButton from "./AppStoreButton";
-import PlayStoreButton from "./PlayStoreButton";
 import { MdOutlineStart } from "react-icons/md";
 import { RiShining2Line } from "react-icons/ri";
 

@@ -4,7 +4,7 @@ export const footerDetails: {
   subheading: string;
   quickLinks: IMenuItem[];
   email: string;
-  telephone: string;
+  telephone?: string;
   socials: ISocials;
 } = {
   subheading:
@@ -24,6 +24,5 @@ export const footerDetails: {
     // }
   ],
   email: "haiqv@hanwha.com",
-  //   telephone: "+1 (123) 456-7890",
   socials: {},
 };
