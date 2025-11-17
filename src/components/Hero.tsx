@@ -3,10 +3,13 @@ import React from "react";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
+import AppStoreButton from "./AppStoreButton";
+import PlayStoreButton from "./PlayStoreButton";
 import { MdOutlineStart } from "react-icons/md";
 import { RiShining2Line } from "react-icons/ri";
 
 import { heroDetails } from "@/data/hero";
+import { withBasePath } from "@/lib/util";
 
 const containerVariants: Variants = {
   hidden: {
@@ -107,7 +110,7 @@ const Hero: React.FC = () => {
     "
           >
             <Image
-              src={heroDetails.centerImageSrc}
+              src={withBasePath(heroDetails.centerImageSrc)}
               width={850}
               height={800}
               quality={100}

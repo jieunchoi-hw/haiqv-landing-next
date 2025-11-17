@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { testimonials } from '@/data/testimonials';
+import { withBasePath } from "@/lib/util";
 
 const Testimonials: React.FC = () => {
     return (
@@ -12,7 +13,7 @@ const Testimonials: React.FC = () => {
                 >
                     <div className="flex items-center mb-4 w-full justify-center lg:justify-start">
                         <Image
-                            src={testimonial.avatar}
+                            src={withBasePath(testimonial.avatar)}
                             alt={`${testimonial.name} avatar`}
                             width={50}
                             height={50}

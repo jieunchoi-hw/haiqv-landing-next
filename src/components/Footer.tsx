@@ -5,6 +5,7 @@ import Image from "next/image";
 import { siteDetails } from "@/data/siteDetails";
 import { footerDetails } from "@/data/footer";
 import { getPlatformIconByName } from "@/utils";
+import { withBasePath } from "@/lib/util";
 
 const Footer: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const Footer: React.FC = () => {
         <div>
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/images/HAIQV_logo_home.png"
+              src={withBasePath("/images/HAIQV_logo_home.png")}
               alt="HAIQV Logo"
               width={20}
               height={40}

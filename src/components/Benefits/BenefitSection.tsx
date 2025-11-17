@@ -6,6 +6,7 @@ import { motion, Variants } from "framer-motion";
 import BenefitBullet from "./BenefitBullet";
 import SectionTitle from "../SectionTitle";
 import { IBenefit } from "@/types";
+import { withBasePath } from "@/lib/util";
 
 interface Props {
   benefit: IBenefit;
@@ -118,7 +119,7 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
               {/* 이미지 또는 비디오 조건부 렌더링 */}
               {typeof imageSrc === "string" && imageSrc.endsWith(".mp4") ? (
                 <video
-                  src={imageSrc}
+                  src={withBasePath(imageSrc)}
                   width={500}
                   height={762}
                   //   controls
@@ -130,7 +131,7 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
                 />
               ) : (
                 <Image
-                  src={imageSrc}
+                  src={withBasePath(imageSrc)}
                   alt="title"
                   width={500}
                   height={762}
