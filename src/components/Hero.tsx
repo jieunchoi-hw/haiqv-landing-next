@@ -4,6 +4,7 @@ import Image from "next/image";
 import AppStoreButton from "./AppStoreButton";
 import PlayStoreButton from "./PlayStoreButton";
 import { MdOutlineStart } from "react-icons/md";
+import { RiShining2Line } from "react-icons/ri";
 
 import { heroDetails } from "@/data/hero";
 
@@ -34,7 +35,7 @@ const Hero: React.FC = () => {
             >
               <div>Get Started</div>
               <span className="ml-3 flex items-center">
-                <MdOutlineStart size={15} />
+                <RiShining2Line size={15} />
               </span>
             </button>
           </a>

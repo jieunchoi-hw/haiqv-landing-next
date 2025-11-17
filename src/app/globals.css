@@ -55,7 +55,7 @@ h6 {
 }
 
 .benefit-section:last-of-type > div {
-  @apply mb-10;
+  /* @apply mb-10; */
 }
 
 @keyframes gradient-move {

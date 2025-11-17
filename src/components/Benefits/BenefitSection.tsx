@@ -52,7 +52,7 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
   return (
     <section className="benefit-section">
       <motion.div
-        className="flex flex-wrap flex-col items-center justify-center gap-2 lg:flex-row lg:gap-20 lg:flex-nowrap mb-24 "
+        className="flex flex-wrap flex-col items-center justify-center gap-2 lg:flex-row lg:gap-20 lg:flex-nowrap my-24 "
         variants={containerVariants}
         initial="offscreen"
         whileInView="onscreen"
@@ -121,7 +121,7 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
                   src={imageSrc}
                   width={500}
                   height={762}
-                  controls
+                  //   controls
                   className="rounded-xl object-cover select-none"
                   autoPlay
                   loop

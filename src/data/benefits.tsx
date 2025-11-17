@@ -38,7 +38,7 @@ export const benefits: IBenefit[] = [
         icon: <FiBox size={26} />,
       },
     ],
-    imageSrc: "/images/feature-notebook.png",
+    imageSrc: "/images/feature-notebook.mp4",
   },
   {
     title: "실험 추적 및 모델 학습 관찰",
@@ -64,7 +64,7 @@ export const benefits: IBenefit[] = [
         icon: <FiDatabase size={26} />,
       },
     ],
-    imageSrc: "/images/feature-notebook.png",
+    imageSrc: "/images/feature-experiment.mp4",
   },
   {
     title: "사용자 및 자원 관리",
@@ -90,7 +90,7 @@ export const benefits: IBenefit[] = [
         icon: <FiActivity size={26} />,
       },
     ],
-    imageSrc: "/images/feature-notebook.png",
+    imageSrc: "/images/feature-resource.mp4",
   },
   {
     title: "다양한 데이터 소스 연동",
@@ -140,7 +140,7 @@ export const benefits: IBenefit[] = [
         icon: <FiSettings size={26} />,
       },
     ],
-    imageSrc: "/images/feature-notebook.png",
+    imageSrc: "/images/feature-model.mp4",
   },
   {
     title: "쉽고 빠른 모델 서빙",
@@ -165,6 +165,6 @@ export const benefits: IBenefit[] = [
         icon: <FiActivity size={26} />,
       },
     ],
-    imageSrc: "/images/feature-notebook.png",
+    imageSrc: "/images/feature-playground.mp4",
   },
 ];

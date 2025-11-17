@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { HiOutlineXMark, HiBars3 } from "react-icons/hi2";
+import { RiShining2Line } from "react-icons/ri";
 
 import Container from "./Container";
 import { siteDetails } from "@/data/siteDetails";
@@ -66,7 +67,7 @@ const Header: React.FC = () => {
             <button
               onClick={toggleMenu}
               type="button"
-              className="bg-primary text-black focus:outline-none rounded-full w-10 h-10 flex items-center justify-center"
+              className="bg-primary text-white focus:outline-none rounded-full w-10 h-10 flex items-center justify-center"
               aria-controls="mobile-menu"
               aria-expanded={isOpen}
             >
@@ -107,7 +108,7 @@ const Header: React.FC = () => {
             <li>
               <Link
                 href="#cta"
-                className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit"
+                className="text-white bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit"
                 onClick={toggleMenu}
               >
                 Get Started
