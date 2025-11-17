@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { motion, Variants } from "framer-motion";
 
 import AppStoreButton from "./AppStoreButton";
 import PlayStoreButton from "./PlayStoreButton";
@@ -7,6 +9,37 @@ import { MdOutlineStart } from "react-icons/md";
 import { RiShining2Line } from "react-icons/ri";
 
 import { heroDetails } from "@/data/hero";
+
+const containerVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const childVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
 
 const Hero: React.FC = () => {
   return (
@@ -20,14 +53,30 @@ const Hero: React.FC = () => {
 
       <div className="absolute left-0 right-0 bottom-0 backdrop-blur-[2px] h-40 bg-gradient-to-b from-transparent via-[rgba(233,238,255,0.5)] to-[rgba(202,208,230,0.5)]"></div>
 
-      <div className="text-center">
-        <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">
+      <motion.div
+        className="text-center"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.h1
+          className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto"
+          variants={childVariants}
+        >
           {heroDetails.heading}
-        </h1>
-        <p className="mt-4 text-foreground max-w-xl mx-auto">
+        </motion.h1>
+
+        <motion.p
+          className="mt-4 text-foreground max-w-xl mx-auto"
+          variants={childVariants}
+        >
           {heroDetails.subheading}
-        </p>
-        <div className="mt-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
+        </motion.p>
+
+        <motion.div
+          className="mt-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto"
+          variants={childVariants}
+        >
           <a href="https://haiqv.ai/" target="_blank" rel="noopener noreferrer">
             <button
               type="button"
@@ -39,19 +88,40 @@ const Hero: React.FC = () => {
               </span>
             </button>
           </a>
-        </div>
-        <Image
-          src={heroDetails.centerImageSrc}
-          width={850}
-          height={800}
-          quality={100}
-          sizes="(max-width: 768px) 100vw, 850px"
-          priority={true}
-          unoptimized={true}
-          alt="app mockup"
-          className="relative mt-8 md:mt-12 mx-auto z-10 object-contain bg-white"
-        />
-      </div>
+        </motion.div>
+
+        <motion.div
+          variants={childVariants}
+          className="relative mt-8 md:mt-12 mx-auto z-10 max-w-[880px] w-full"
+        >
+          <div
+            className="
+      relative
+      w-full
+       rounded-t-3xl 
+      bg-white/30
+      dark:bg-white/10
+      backdrop-blur-lg
+      border border-white/20
+      shadow-[0_8px_30px_rgb(0,0,0,0.06)]
+      overflow-hidden
+      p-4
+    "
+          >
+            <Image
+              src={heroDetails.centerImageSrc}
+              width={850}
+              height={800}
+              quality={100}
+              sizes="(max-width: 768px) 100vw, 850px"
+              priority={true}
+              unoptimized={true}
+              alt="app mockup"
+              className="object-contain w-full h-auto rounded-lg"
+            />
+          </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
