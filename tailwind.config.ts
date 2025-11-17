@@ -18,6 +18,9 @@ const config: Config = {
         "foreground-accent": "var(--foreground-accent)",
         "hero-background": "var(--hero-background)",
       },
+      fontFamily: {
+        sans: ["Pretendard", "sans-serif"],
+      },
     },
   },
   plugins: [],
