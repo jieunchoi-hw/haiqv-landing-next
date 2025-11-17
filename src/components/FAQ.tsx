@@ -13,7 +13,7 @@ const FAQ: React.FC = () => {
   return (
     <section
       id="faq"
-      className="py-10 lg:py-20 ps-20 relative backdrop-blur-[2px] bg-gradient-to-b from-transparent via-[rgba(233,238,255,0.5)] to-[rgba(202,208,230,0.5)]"
+      className="py-10 lg:px-20 px-20 relative backdrop-blur-[2px] bg-gradient-to-b from-transparent via-[rgba(233,238,255,0.5)] to-[rgba(202,208,230,0.5)]"
     >
       <div className="flex flex-col lg:flex-row gap-10 ">
         <div className="">
@@ -34,7 +34,7 @@ const FAQ: React.FC = () => {
           </a>
         </div>
 
-        <div className="w-full lg:max-w-2xl mx-auto border-b">
+        <div className="w-full lg:max-w-4xl mx-auto border-b">
           {faqs.map((faq, index) => (
             <div key={index} className="mb-7">
               <Disclosure>
