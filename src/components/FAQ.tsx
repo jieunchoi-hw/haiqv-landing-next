@@ -30,7 +30,7 @@ const FAQ: React.FC = () => {
             href="mailto:"
             className="mt-3 block text-xl lg:text-4xl text-secondary font-semibold hover:underline text-center lg:text-left"
           >
-            haiqv@hanwha.com
+            haiqv.ai@hanwha.com
           </a>
         </div>
 

@@ -23,6 +23,6 @@ export const footerDetails: {
     //     url: "#testimonials"
     // }
   ],
-  email: "haiqv@hanwha.com",
+  email: "haiqv.ai@hanwha.com",
   socials: {},
 };
