@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/HAIQV_logo_main.png",
+        url: "https://jieunchoi-hw.github.io/haiqv-landing-next/images/HAIQV_logo_main.png",
         width: 1200,
         height: 675,
         alt: siteDetails.siteName,
@@ -26,9 +26,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: siteDetails.metadata.title,
-    description: siteDetails.metadata.description,
-    images: ["/images/HAIQV_logo_main.png"],
+    images: [
+      {
+        url: "https://jieunchoi-hw.github.io/haiqv-landing-next/images/HAIQV_logo_main.png",
+        width: 1200,
+        height: 630,
+        alt: "HAIQV AI Platform",
+      },
+    ],
   },
 };
 
