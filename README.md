@@ -1,104 +1,40 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnexi-launch%2Ffinwise-landing-page)
+# HAIQV 랜딩페이지
 
-# Finwise - Next.js + Tailwind Landing Page Template
+이 프로젝트는 HAIQV 서비스 소개를 위한 Next.js와 Tailwind CSS 기반의 반응형 랜딩 페이지입니다.
 
-Finwise is a lightweight, easily configurable, and customizable **Next.js** and **Tailwind CSS** landing page template. It’s built to be adaptable, performant, and perfect for any product launch, portfolio, or promotional site.
+## 주요 기능
 
-Try out the demo here: [https://finwise-omega.vercel.app](https://finwise-omega.vercel.app).
+- Next.js App Router + TypeScript
+- Tailwind CSS 스타일링
+- Framer Motion 애니메이션
+- next/image 이미지 최적화
+- React Icons 아이콘 사용
+- 모듈형 컴포넌트 구조
 
-Please check out the documentation below to get started.
+## 시작하기
 
----
+### 준비물
 
-## Features
+- Node.js 18 이상
+- npm 8 이상
 
-- **Next.js** app router with **TypeScript**
-- **Tailwind CSS** v3 for flexible styling customization
-- Smooth transitions powered by **Framer Motion**
-- Built-in **font optimization** with [next/font](https://nextjs.org/docs/app/api-reference/components/font)
-- Automatic **image optimization** via [next/image](https://nextjs.org/docs/app/building-your-application/optimizing/images)
-- Access to **31+ icon packs** via [React Icons](https://react-icons.github.io/react-icons/)
-- Near-perfect **Lighthouse score**
-- Modular, responsive, and **scalable components**
-- **Free lifetime updates**
+### 설치 및 실행
 
----
+```bash
+npm install
+npm run dev
+```
 
-## Sections
+브라우저에서 [localhost:3000](http://localhost:3000) 접속
 
-- Hero
-- Partners or Clients Logos
-- Features
-- Pricing
-- Testimonials
-- FAQ
-- Statistics
-- CTA
-- Footer
+## 커스터마이징
 
----
+- 색상: `src/app/globals.css`에서 변경
+- 사이트 정보: `src/data/siteDetails.ts`에서 수정
+- 콘텐츠: `src/data` 폴더 내 파일에서 관리
+- 파비콘: `src/app/favicon.ico` 교체
+- 이미지: `public/images` 폴더에 추가
 
-## Getting Started
+## 라이선스
 
-### Prerequisites
-
-Before starting, make sure you have the following installed:
-
-- **Node.js**: Version 18 or later
-- **npm**: Version 8 or later (bundled with Node.js)
-- **Code editor**: [VS Code](https://code.visualstudio.com/) is recommended.
-
-### Steps
-
-1. **Install dependencies**: Run `npm install`
-2. **Run the development server**: `npm run dev`
-3. **View your project**: Open [localhost:3000](http://localhost:3000)
-
----
-
-## Customization
-
-1. **Edit colors**: Update `globals.css` for primary, secondary, background, and accent colors.
-2. **Update site details**: Customize `siteDetails.ts` in `/src/data` to reflect your brand and site info.
-3. **Modify content**: Files in `/src/data` handle data for navigation, features, pricing, testimonials, and more.
-4. **Replace favicon**: Add your icon to `/src/app/favicon.ico`.
-5. **Add images**: Update `public/images` for Open Graph metadata (e.g., `og-image.jpg`, `twitter-image.jpg`).
-
----
-
-## Deploying on Vercel
-
-The fastest way to deploy Finwise is on [Vercel](https://vercel.com/). Simply click the "Deploy with Vercel" button at the top of this README, or check the [Next.js deployment docs](https://vercel.com/docs/deployments/deployment-methods) for other deployment options.
-
----
-
-## Contributing
-
-Finwise is an open-source project, and we welcome contributions from the community! If you have ideas for new components, designs, layouts, or optimizations, please join us in making Finwise even better.
-
-### How to Contribute
-
-1. **Fork the Repository**: Clone it locally.
-2. **Create a New Branch**: For example, `feature/new-section` or `fix/style-issue`.
-3. **Develop and Test**: Make sure your changes work and don't break existing functionality.
-4. **Submit a Pull Request**: Open a pull request with a clear description of your changes, and we'll review it.
-
-### Ideas for Contributions
-
-- New component sections (team introductions, comparison table, case studies, etc.)
-- Additional page variants (e.g., agency, eCommerce, portfolio layouts)
-- Additional themes
-- Documentation updates, tutorials, or guides
-
----
-
-## Community and Support
-
-Join our community discussions on GitHub to share ideas, ask questions, or suggest improvements. Let’s build something amazing together!
-
-
---- 
-
-## License
-
-This project is open-source and available under the MIT License. Feel free to use, modify, and distribute it for personal or commercial projects.
+MIT License

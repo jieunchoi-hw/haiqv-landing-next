@@ -4,7 +4,7 @@ import { benefits } from "@/data/benefits";
 
 const Benefits: React.FC = () => {
   return (
-    <div id="features">
+    <div id="features" className="px-5">
       <h2 className="text-center text-gray-400 font-bold text-lg my-12">
         Features
       </h2>
