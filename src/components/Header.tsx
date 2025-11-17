@@ -5,10 +5,12 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { HiOutlineXMark, HiBars3 } from "react-icons/hi2";
 import { RiShining2Line } from "react-icons/ri";
+import Image from "next/image";
 
 import Container from "./Container";
 import { siteDetails } from "@/data/siteDetails";
 import { menuItems } from "@/data/menuItems";
+import { withBasePath } from "@/lib/util";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,21 +24,23 @@ const Header: React.FC = () => {
       <Container className="!px-0">
         <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <img
-              src="/images/HAIQV_logo_home.png"
+          <Link href="/" className="flex items-center gap-3 ">
+            <Image
+              src={withBasePath("/images/HAIQV_logo_home.png")}
               alt="HAIQV Home Logo"
+              width={25}
+              height={25}
               style={{
-                height: "24px",
                 filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.15))",
               }}
+              className="object-contain"
             />
-            <img
-              src="/images/HAIQV_logo_main.png"
+            <Image
+              src={withBasePath("/images/HAIQV_logo_main.png")}
               alt="HAIQV Home Logo"
-              style={{
-                height: "24px",
-              }}
+              width={110}
+              height={24}
+              className="object-contain"
             />
           </Link>
 
@@ -53,13 +57,13 @@ const Header: React.FC = () => {
               </li>
             ))}
             {/* <li>
-              <Link
-                href="#cta"
-                className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors"
-              >
-                Download
-              </Link>
-            </li> */}
+            <Link
+              href="#cta"
+              className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors"
+            >
+              Download
+            </Link>
+          </li> */}
           </ul>
 
           {/* Mobile Menu Button */}
