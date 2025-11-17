@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import AppStoreButton from "./AppStoreButton";
 import PlayStoreButton from "./PlayStoreButton";
+import { MdOutlineStart } from "react-icons/md";
 
 import { heroDetails } from "@/data/hero";
 
@@ -26,19 +27,28 @@ const Hero: React.FC = () => {
           {heroDetails.subheading}
         </p>
         <div className="mt-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
-          <AppStoreButton dark />
-          <PlayStoreButton dark />
+          <a href="https://haiqv.ai/" target="_blank" rel="noopener noreferrer">
+            <button
+              type="button"
+              className="flex items-center justify-center min-w-[190px] mt-3 px-6 h-12 rounded-full w-full sm:w-fit text-white bg-foreground transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+            >
+              <div>Get Started</div>
+              <span className="ml-3 flex items-center">
+                <MdOutlineStart size={15} />
+              </span>
+            </button>
+          </a>
         </div>
         <Image
           src={heroDetails.centerImageSrc}
-          width={700}
-          height={620}
+          width={850}
+          height={800}
           quality={100}
-          sizes="(max-width: 768px) 100vw, 700px"
+          sizes="(max-width: 768px) 100vw, 850px"
           priority={true}
           unoptimized={true}
           alt="app mockup"
-          className="relative mt-12 md:mt-16 mx-auto z-10 object-contain bg-white"
+          className="relative mt-8 md:mt-12 mx-auto z-10 object-contain bg-white"
         />
       </div>
     </section>

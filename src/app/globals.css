@@ -57,3 +57,12 @@ h6 {
 .benefit-section:last-of-type > div {
   @apply mb-10;
 }
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
