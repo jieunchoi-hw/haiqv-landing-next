@@ -23,10 +23,21 @@ const Header: React.FC = () => {
         <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <FaFingerprint className="text-foreground min-w-fit w-7 h-7" />
-            <span className="text-xl font-semibold text-foreground cursor-pointer">
-              {siteDetails.siteName}
-            </span>
+            <img
+              src="/images/HAIQV_logo_home.png"
+              alt="HAIQV Home Logo"
+              style={{
+                height: "24px",
+                filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.15))",
+              }}
+            />
+            <img
+              src="/images/HAIQV_logo_main.png"
+              alt="HAIQV Home Logo"
+              style={{
+                height: "24px",
+              }}
+            />
           </Link>
 
           {/* Desktop Menu */}

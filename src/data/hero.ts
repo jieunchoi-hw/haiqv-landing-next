@@ -1,5 +1,6 @@
 export const heroDetails = {
-    heading: 'Smart, Secure, Simple Financial Management',
-    subheading: 'From effortless budgeting to real-time investment insights, Finwise puts you in control of your money like never before',
-    centerImageSrc: '/images/hero-mockup.webp',
-}
+  heading: "HAiQV AI Platform",
+  subheading:
+    "HAiQV AI Platform은 Kubernetes 기반의 통합 AI 개발·운영 환경으로 Notebook 개발, 데이터 관리, 실험 추적, 모델 관리·서빙까지 모두 한 곳에서 제공합니다. ",
+  centerImageSrc: "/images/home.png",
+};
